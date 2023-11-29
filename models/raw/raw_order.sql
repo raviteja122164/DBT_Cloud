@@ -4,4 +4,4 @@
     )
 }}
 
-select * from ANALYTICS.RAW_SCHEMA.ORDERS
+select * from {{ source('snowflakemart', 'raw_order') }}

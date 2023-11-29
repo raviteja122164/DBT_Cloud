@@ -4,4 +4,4 @@
     )
 }}
 
-select * from ANALYTICS.RAW_SCHEMA.PRODUCT
+select * from {{ source('snowflakemart', 'raw_product') }}

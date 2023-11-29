@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: snowflakemart
+    database: analytics
+    schema: dbt_cloud
+    tables:
+      - name: raw_customer
+      - name: raw_order
+      - name: raw_product
